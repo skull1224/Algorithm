@@ -16,3 +16,22 @@ int main(void)
 		putchar('\n');
 	}
 }
+
+// 입력한 수를 너비와 높이로 하는 정사각형을 *기호로 출력하는 프로그램
+#include <stdio.h>
+
+int main(void)
+{
+	int a, b, c, d;
+	printf("사각형의 높이와 너비로 할 수를 입력 :");
+	scanf_s("%d %d", &a,&c);
+	for (b = 1; b <= a; b++)
+	{
+		printf("*");
+		for (d = 1; d <= c; d++)
+		{
+			printf("*");
+		}
+		putchar('\n');
+	}
+}

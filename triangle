@@ -1,0 +1,25 @@
+//직각 이등변 삼각형을 출력하는 부분을 함수로 표현하여 작성하기
+
+#include <stdio.h>
+
+void triangleLB(int n)
+{
+	int i,j;
+	for (i = 1; i <= n; i++)
+	{
+		for (j = 1; j <= i; j++)
+		{
+			printf("*");
+		}
+		putchar('\n');
+	}
+}
+
+int main(void)
+{
+	int n;
+	printf("왼쪽 아래변의 길이를 입력하시오 :");
+	scanf_s("%d", &n);
+	triangleLB(n);
+	return 0;
+}
